@@ -1,0 +1,10 @@
+The following CSS code snippet causes unexpected behavior in some browsers:
+
+```css
+div {
+  width: calc(50% - 10px);
+  margin: 0 auto;
+}
+```
+
+This uses `calc()` to calculate the width of a div, subtracting 10px from 50% of the container's width. However, some browsers may interpret this incorrectly, leading to unexpected layout issues.
